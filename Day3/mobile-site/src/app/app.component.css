@@ -1,0 +1,72 @@
+.header {
+  background-color: #FFD1DC;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #FF80AB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #FF80AB;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 0;
+}
+
+.delivery-info {
+  font-size: 16px;
+  color: #7B3F6C;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  border: 1px solid #FF80AB;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.search-bar button {
+  background-color: #FF80AB;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #FFD1DC;
+  color: #FF80AB;
+}
+
+footer {
+  background-color: #FFD1DC;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #FF80AB;
+  margin-top: 50px;
+}
+
+.copyright {
+  font-size: 16px;
+  color: #7B3F6C;
+  font-family: 'Great Vibes', cursive;
+}

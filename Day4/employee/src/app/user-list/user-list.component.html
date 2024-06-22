@@ -1,0 +1,17 @@
+<h1 style="color: #ff6347; text-align: center;">User List</h1>
+<table id="user-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(user of users; track user){
+        <tr>
+          <td>{{user.name }}</td>
+          <td>{{user.email }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>

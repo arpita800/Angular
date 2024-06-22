@@ -1,0 +1,15 @@
+.product-table {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+  
+  .product-table th,
+  .product-table td {
+    text-align: left; /* Align content left */
+    padding: 8px; /* Add padding for better readability */
+    border: 1px solid #ddd; /* Add thin border */
+  }
+  
+  .product-table thead th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+  }

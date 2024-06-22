@@ -1,0 +1,52 @@
+<div class="nav">
+  <h1>{{ title }}</h1>
+</div>
+
+<div class="section">
+  <h2>Employees</h2>
+  <div class="form">
+    <form>
+      <div class="row">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" [(ngModel)]="employee.firstName" name="firstName">
+      </div>
+      <div class="row">
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" [(ngModel)]="employee.lastName" name="lastName">
+      </div>
+      <div class="row">
+        <label for="email">Email</label>
+        <input type="email" id="email" [(ngModel)]="employee.email" name="email">
+      </div>
+      <div class="row">
+        <label for="department">Department</label>
+        <input type="text" id="department" [(ngModel)]="employee.department" name="department">
+      </div>
+      <button type="button" (click)="isEditEmployee ? updateEmployee() : addNewEmployee()">
+        {{ isEditEmployee ? 'Update Employee' : 'Add Employee' }}
+      </button>
+    </form>
+  </div>
+
+  <div class="list">
+    <h3>Employee List</h3>
+    <ul>
+      <li *ngFor="let emp of employees; trackBy: trackByFn">
+        {{ emp.firstName }} {{ emp.lastName }} - {{ emp.email }} - {{ emp.department }}
+        <button (click)="editEmployee(emp)">Edit</button>
+        <button (click)="deleteEmployee(emp.employeeId)">Delete</button>
+        <button (click)="viewEmployee(emp)">View</button>
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="selectedEmployee" class="details">
+    <h4>Employee Details</h4>
+    <p>First Name: {{ selectedEmployee.firstName }}</p>
+    <p>Last Name: {{ selectedEmployee.lastName }}</p>
+    <p>Email: {{ selectedEmployee.email }}</p>
+    <p>Department: {{ selectedEmployee.department }}</p>
+    <button (click)="closeEmployeeView()">Close</button>
+  </div>
+</div>
+

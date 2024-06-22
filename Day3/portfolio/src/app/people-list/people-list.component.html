@@ -1,0 +1,20 @@
+<table class="cute-table">
+
+    <thead> 
+        <tr>
+        <th>Name</th>
+        <th>Tech</th>
+        <th>Know More</th>
+    </tr>
+    </thead>
+    <tbody>
+        @for (person of people; track person) {
+        <tr >
+            <td> {{person.name}}</td>
+           <td> {{person.Technology}}</td>
+           <td> <button (click)="showDetails(person.ids)"  class="details-btn"> View Deails </button></td>
+        </tr>
+    }
+    </tbody>
+
+</table>

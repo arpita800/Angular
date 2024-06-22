@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (users of user ; track user){
+        <tr>
+            <td> {{users.name}}</td>
+            <td> {{users.age}}</td>
+            <td> {{users.email}}</td>
+        </tr>
+    }
+    </tbody>
+</table>

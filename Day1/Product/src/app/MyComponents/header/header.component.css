@@ -1,0 +1,16 @@
+.header{
+    height: 270px;
+    padding: 30px ;
+    display: flex;
+    background-color: blanchedalmond;
+}
+
+.site-slogan{
+    width: 480px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+h2{
+    font-size: 45px;
+}

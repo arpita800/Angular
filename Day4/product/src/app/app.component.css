@@ -1,0 +1,33 @@
+.container {
+    margin: 20px;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .container {
+    padding: 10px 16px;
+}
+
+.navbar .d {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .btn {
+    margin-left: auto;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}

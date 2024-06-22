@@ -1,0 +1,7 @@
+<p>Your total bill</p>
+<div class="cart-item" > @for (item of cartItems; track item) { 
+    <p>{{ item.name }} - {{ item.price }}</p>
+  
+  <p class="cart-total">Total Bill: {{ totalBill }}</p>}
+  <button>Check Out</button>
+  </div>

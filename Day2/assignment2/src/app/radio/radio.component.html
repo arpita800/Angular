@@ -1,0 +1,15 @@
+<input (change)="setChecked('valid')" type="radio" name="status" />
+<label>Valid</label>
+<br>
+<input (change)="setChecked('notValid')" type="radio" name="status" />
+<label>Not Valid</label>
+
+<!-- <h4 *ngIf="selectedOption === 'valid'">Data is valid</h4>
+<h4 *ngIf="selectedOption === 'notValid'">Data is Not Valid</h4> -->
+@if(selectedOption === 'valid'){
+   <p>Data is valid</p> 
+}
+@else if(selectedOption === 'notValid') {
+   <p> Data is Not Valid</p>
+}
+

@@ -1,0 +1,14 @@
+
+<div class="person-details">
+@if(PersonId){
+    @for (person of pesone; track person) {
+        @if(PersonId==person.ids){
+            <p class="person-name"> Born: <span class="birth-year"></span> {{person.name}}</p>
+            <p class="person-born">{{person.Born}}</p>
+            <p class="person-net-worth">{{person.NetWorth}}</p>
+            <p class="person-about">{{person.About}}</p>
+        }
+    }
+
+}
+</div>

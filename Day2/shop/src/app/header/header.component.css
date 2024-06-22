@@ -1,0 +1,12 @@
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .logo img {
+    width: 150px; /* Adjust size as needed */
+    height: 100px; 
+  }
+  

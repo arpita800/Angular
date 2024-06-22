@@ -1,0 +1,35 @@
+.user-details {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .user-details h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .user-details p {
+    margin-bottom: 10px;
+  }
+  
+
+  .back-button {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }

@@ -1,0 +1,15 @@
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+  
+  .cart-total {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  

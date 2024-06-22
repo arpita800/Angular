@@ -1,0 +1,11 @@
+<h1>Our Products</h1>
+<hr>
+@for (product of products; track product ) {
+  <div class="">
+    <p>{{product.name}} - Price: {{product.price}}</p>
+    <img width="200" height="200" alt="image" [src]="product.image"/>
+    <p id="">
+      <button (click)="OnClick(product.name, product.price, product.description)">View Detaiks</button>
+    </p>
+  </div>
+}

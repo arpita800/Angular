@@ -1,0 +1,9 @@
+<div class="container">
+<h2>LIST OF EMPLOYEES</h2>
+
+<div class="employee-list-item">  @for (employee of employees; track employee) { 
+    <button class="employee-list-item button" [routerLink]="['/employee', employee.id]">{{ employee.name }}</button> <br>
+}
+
+  </div>
+  </div>

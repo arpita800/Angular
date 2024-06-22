@@ -1,0 +1,19 @@
+
+<div *ngIf="!submitted">
+    <label for="name">Name: </label> <br>
+    <input type="text" id="name" [(ngModel)]="name" placeholder="Enter your name">
+    <br><br>
+    <label for="age">Age: </label> <br>
+    <input type="text" id="age" [(ngModel)]="age" placeholder="Enter your age">
+    <br><br>
+    <button [disabled]="!name || !age" (click)="submitForm()">Submit</button>
+  </div>
+  
+  <div *ngIf="submitted">
+    <h2>Submitted Content:</h2>
+    <p>Name:  {{ name }}</p>
+    <p>Age :  {{ age }}</p>
+  </div> 
+
+  
+  

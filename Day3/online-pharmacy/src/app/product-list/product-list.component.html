@@ -1,0 +1,30 @@
+<!-- <div class="product-container">
+    <div class="product-item">@for (product of products; track product){ 
+      <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
+      <div class="product-details">
+        <h3>{{ product.name }}</h3>
+
+          <button routerLink="/products/{{ product.id }}" class="view-details-btn">View Details</button> <br><br><br><hr>
+      </div>}
+    
+    
+    </div>
+  </div>
+
+   -->
+
+
+
+   <div class="product-container">
+    <div class="product-grid">
+        @for (product of products; track product) {
+            <div class="product-item">
+                <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
+                <div class="product-details">
+                    <h3>{{ product.name }}</h3>
+                    <button routerLink="/products/{{ product.id }}" class="view-details-btn">View Details</button>
+                </div>
+            </div>
+        }
+    </div>
+</div>

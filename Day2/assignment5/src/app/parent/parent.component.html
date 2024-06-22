@@ -1,0 +1,25 @@
+
+<h2>Student Details</h2>
+
+<table>
+  <thead>
+    <tr>
+        <th>Student ID</th>
+      <th>Student Name</th>
+      <th>Gender</th>
+      <th>Date Of Birth</th>
+      <th>Course Fee</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (student of Students ; track Students){ 
+    <tr>
+     <td> {{student.id}} </td>
+     <td>{{student.Name}}</td>
+     <td>{{student.Gender}}</td>
+     <td>{{student.dob}}</td>
+     <td>{{student.Fee}}</td>
+    </tr>
+  }
+  </tbody>
+</table>

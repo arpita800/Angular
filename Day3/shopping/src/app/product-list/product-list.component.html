@@ -1,0 +1,37 @@
+<title>Online Shop</title>
+
+<body>
+  <div class="container">
+    <div class="logo">
+      <div class="logo-box">
+        <img src="./assets/logo.jpeg" alt="Online Shop Logo" >
+        <h1 style="display: inline;">ShopExperess</h1>
+      </div>
+
+      <div class="search-bar">
+        <input type="text"  placeholder="Search...">
+        <span>Deliver to: <input type="text" placeholder="Enter location"></span>
+      </div>
+    </div>
+
+    <main>
+      <h1>Welcome to Our Online Shop</h1>
+      <p>Explore a wide range of products!</p>
+      <h2>Products</h2>
+      <ul>
+        <li class="product-container"> @for (product of products; track product) { 
+          <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image">
+          <div class="product-info">
+            <h3>{{ product.name }}</h3>
+            <p>Price: {{ product.price }}</p>
+            <button routerLink="/products/{{ product.id }}">view</button>
+          </div>
+        }</li>
+      </ul>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Online Shop. All rights reserved.</p>
+    </footer>
+  </div>
+</body>

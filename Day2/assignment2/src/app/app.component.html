@@ -1,0 +1,19 @@
+ 
+ <select (input) = "setText($event)"> //event binding
+  <option value="select">select</option>
+  <option value="india">India</option>
+  <option value="england">england</option>
+  <option value="USA">usa</option>
+</select>
+
+@switch(txt){
+  @case("india") {<h4>You have selected India</h4>}
+  @case("england") {<h4>You have selected england</h4>}
+  @case("USA") {<h4>You have selected USA</h4>}
+
+} 
+<br>
+<br>
+<br>
+
+<app-radio></app-radio>

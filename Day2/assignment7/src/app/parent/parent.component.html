@@ -1,0 +1,26 @@
+
+<h2>Product Details</h2>
+
+<table class="product-table">
+  <thead>
+    <tr>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (product of products ; track products){ 
+    <tr >
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+      <td>{{ product.quantity }}</td>
+    </tr>
+  }
+  </tbody>
+</table>
+
+
+<a routerLink="/child">Go to Child Component </a>
+
+
